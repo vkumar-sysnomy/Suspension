@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/padding_normal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.suspensionMain.PutUpSuspensionDetailFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/suspension_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/et_suspension_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_suspension_number"
+                android:text=""
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/location_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/suspension_number_layout"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_location"
+                android:text=""
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/reason_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/location_layout"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/et_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_reason"
+                android:text=""
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/start_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/reason_layout"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/et_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_start"
+                android:text=""
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/end_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/start_layout"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/et_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_end"
+                android:text=""
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/num_of_bays_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/end_layout"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/et_num_of_bays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_num_of_bays"
+                android:text=""
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/additional_instruction_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/num_of_bays_layout"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/et_additional_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="@string/hint_additional_instructions"
+                android:text=""
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@+id/additional_instruction_layout"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:text="Continue"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            app:layout_constraintTop_toBottomOf="@+id/btn_continue"
+            android:background="@color/colorAccent"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

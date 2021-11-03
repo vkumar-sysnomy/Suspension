@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.suspensionMain.AddVRMsFragment"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textCapAddVRMs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add VRMs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iv_addVRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/addvrm"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_done"
+        app:layout_constraintTop_toBottomOf="@+id/textCapAddVRMs">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="1" />
+
+                <EditText
+                    android:id="@+id/txtVRM1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789">
+                    <requestFocus/>
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="2" />
+
+                <EditText
+                    android:id="@+id/txtVRM2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="3" />
+
+                <EditText
+                    android:id="@+id/txtVRM3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="4" />
+
+                <EditText
+                    android:id="@+id/txtVRM4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="5" />
+
+                <EditText
+                    android:id="@+id/txtVRM5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="6" />
+
+                <EditText
+                    android:id="@+id/txtVRM6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="7" />
+
+                <EditText
+                    android:id="@+id/txtVRM7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="8" />
+
+                <EditText
+                    android:id="@+id/txtVRM8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="9" />
+
+                <EditText
+                    android:id="@+id/txtVRM9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="10" />
+                <EditText
+                    android:id="@+id/txtVRM10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.9"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:imeOptions="actionDone"
+                    android:padding="5dp"
+                    android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

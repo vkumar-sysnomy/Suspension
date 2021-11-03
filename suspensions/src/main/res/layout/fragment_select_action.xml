@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.suspensionMain.SelectActionFragment">
+
+    <Button
+        android:id="@+id/btn_put_up_suspension"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="PUT UP A \n SUSPENSION"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn_take_down_suspension"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"
+        android:textSize="25sp"
+        android:text="TAKE DOWN A \n SUSPENSION"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btn_put_up_suspension"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
